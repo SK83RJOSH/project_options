@@ -11,7 +11,7 @@ endif()
 include_guard()
 
 # only useable here
-set(ProjectOptions_SRC_DIR ${CMAKE_CURRENT_LIST_DIR})
+set(ProjectOptions_SRC_DIR ${CMAKE_CURRENT_LIST_DIR} CACHE INTERNAL "")
 
 # include the files to allow calling individual functions (including the files does not run any code.)
 include("${CMAKE_CURRENT_LIST_DIR}/Common.cmake")
